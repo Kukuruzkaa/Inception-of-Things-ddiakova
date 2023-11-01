@@ -1,27 +1,18 @@
 Vagrant.configure(2) do |config|
   config.vm.box = "centos/7"
-  config.vm.provider "virtualbox" do |v|
-    v.memory = "2048"
-    v.cpus = "1"
-  end
-
 
   config.vm.define "grvelvaS" do |control|
     control.vm.hostname = "grvelvaS"
     control.vm.network "private_network", ip: "192.168.56.110"
     control.vm.provider "virtualbox" do |v|
       v.name = "grvelvaS"
+      v.memory = "2048"
+      v.cpus = "1"
     end
     config.vm.provision "shell", inline: <<-SHELL
+    echo "beep"
   SHELL
   end
-  config.vm.define "grvelvaSW" do |control|
-    control.vm.hostname = "grvelvaSW"
-    control.vm.network "private_network", ip: "192.168.56.111"
-    control.vm.provider "virtualbox" do |v|
-      v.name = "grvelvaSW"
-    end
-    config.vm.provision "shell", inline: <<-SHELL
-  SHELL
-  end
+  config.vm.synced_folder "./scripts","/home/scripts"
+
 end
