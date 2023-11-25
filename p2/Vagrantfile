@@ -10,9 +10,9 @@ Vagrant.configure(2) do |config|
       v.cpus = "1"
     end
   config.vm.provision "file", source: "scripts/start.sh", destination: "/tmp/start.sh"
-
   config.vm.provision "shell", inline: <<-SHELL
-    echo "beep"
+    chmod +x /tmp/start.sh
+    /tmp/start.sh
   SHELL
   end
 end
