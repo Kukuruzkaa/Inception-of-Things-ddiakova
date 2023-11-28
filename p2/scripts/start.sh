@@ -7,6 +7,6 @@ export NAMESPACE=grvelva
 echo $PATH
 export PATH="$PATH:/usr/local/bin"
 echo $PATH
-kubectl create namespace ${NAMESPACE}
-kubectl --namespace ${NAMESPACE} create -f /tmp/scripts/deployment.yaml
-kubectl --namespace ${NAMESPACE} create -f /tmp/scripts/service.yaml
+kubectl apply -f /tmp/scripts/deployment.yaml
+kubectl apply -f /tmp/scripts/service.yaml
+kubectl apply -f /tmp/scripts/ingress.yaml
