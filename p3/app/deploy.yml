@@ -1,0 +1,12 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test
+  namespace: dev
+spec:
+  containers:
+     - name: test
+       image: wil42/playground:v1
+       imagePullPolicy: Always
+       ports:
+          - containerPort: 8888
