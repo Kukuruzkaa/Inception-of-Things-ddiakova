@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test
+  namespace: dev
+spec:
+  selector:
+    matchLabels:
+      app: test
+  template:
+    metadata:
+      namespace: dev
+      labels: # labels to select/identify the deployment
+        app: test
+    spec:
+      containers:
+      - name: test
+        image: wil42/playground:v2
+        imagePullPolicy: Always
+        ports:
+          - containerPort: 8888
