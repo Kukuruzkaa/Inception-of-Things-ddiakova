@@ -3,6 +3,8 @@ kind: Deployment
 metadata:
   name: test
   namespace: dev
+  labels:
+    name: test
 spec:
   containers:
      - name: test
