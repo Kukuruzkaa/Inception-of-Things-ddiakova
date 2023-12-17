@@ -1,0 +1,140 @@
+    1  sudo   curl -s https://raw.githubusercontent.com/rancher/k3d/main/install.sh | bash
+    2  sudo apt-get install -y apt-transport-https ca-certificates curl
+    3  sudo   curl -s https://raw.githubusercontent.com/rancher/k3d/main/install.sh | bash
+    4  k3d
+    5  sudo k3d cluster create part3cluster -p "8081:80@loadbalancer" --agents 2
+    6  sudo /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    7  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    8  brew install docker
+    9  (echo; echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"') >> /home/bturcott/.bashrc
+   10  brew install docker
+   11  sudo k3d cluster create part3cluster -p "8081:80@loadbalancer" --agents 2
+   12  sudo system systemctl start docker
+   13  sudo system systemctl service.docker staet
+   14  sudo systemctl start docker
+   15  dockerd
+   16  cd /
+   17  du -sh
+   18  brew install argocd
+   19  docker
+   20  sudo systemctl start docker
+   21  dockerd
+   22  sudo k3d cluster create part3cluster -p "8081:80@loadbalancer" --agents 2
+   23  apt install docker.io
+   24  sudo apt install docker.io
+   25  sudo k3d cluster create part3cluster -p "8081:80@loadbalancer" --agents 2
+   26  kubectl
+   27  sudo snap install kubectl
+   28  sudo snap install kubectl --classic
+   29  kubectl
+   30  kubectl get ns
+   31  sudo kubectl get ns
+   32  sudo kubectl create ns argocd
+   33  export KUBECONFIG=$(sudo k3d kubeconfig write part3cluster)
+   34  sudo kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/core-install.yaml
+   35  sudo kubectl get  ns argocd
+   36  sudo kubectl get pods -n argocd
+   37  brew install argocd
+   38  sudo kubectl patch svc argocd-server -n argocd -p '{"spec": {"type": "LoadBalancer"}}'
+   39  sudo kubectl port-forward svc/argocd-server -n argocd 8080:443
+   40  sudo kubectl port-forward svc/argocd-server -n argocd 8080:443 -nargocd
+   41  sudo kubectl port-forward svc/argocd-server -n argocd 8080:443 
+   42  argocd admin initial-password -n argocd
+   43  sudo argocd admin initial-password -n argocd
+   44  sudo argocd admin initial-password
+   45  su
+   46  sudo argocd admin initial-password
+   47  argocd admin initial-password -n argocd
+   48  export KUBECONFIG=$(sudo k3d kubeconfig write part3cluster)
+   49  argocd admin initial-password -n argocd
+   50  sudo argocd admin initial-password -n argocd
+   51  sudo -i
+   52  ;s
+   53  ls
+   54  sudo k3d kubeconfig write part3cluster
+   55  mv /root/.config/k3d/kubeconfig-part3cluster.yaml .kube/config/config.yaml
+   56  ls
+   57  mkdir .kube
+   58  cd .kube/
+   59  mkdir config
+   60  cd
+   61  sudo mv /root/.config/k3d/kubeconfig-part3cluster.yaml .kube/config/config.yaml
+   62  export KUBECONFIG=~/.kube/config/config.yaml
+   63  argocd admin initial-password -n argocd
+   64  chmod -R 777 .kube
+   65  sudo chmod -R 777 .kube
+   66  argocd admin initial-password -n argocd
+   67  argocd
+   68  argocd admin initial-password -n argocd
+   69  kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d
+   70  cat .kube/config/config.yaml 
+   71  sudo k3d kubeconfig write part3cluster
+   72  cat /root/.config/k3d/kubeconfig-part3cluster.yaml
+   73  sudo cat /root/.config/k3d/kubeconfig-part3cluster.yaml
+   74  sudo kubectl get ns 
+   75  sudo kubectl get secret
+   76  sudo kubectl get secret -n argocd
+   77  sudo kubectl get secret argocd-secret -n argocd
+   78  argocd login
+   79  argocd login localhost:8080
+   80  argocd login localhost:8081
+   81  sudo kubectl rollout restart deploy/argocd-server
+   82  argocd admin initial-password -n argocd
+   83  sudo kubectl -n argocd get pods -l "app.kubernetes.io/name=argocd-server" -o name |     cut -d'/' -f 2 |     xargs -I {} kubectl -n argocd logs {} |     grep "Password"
+   84  sudo   kubectl -n argocd get secret argocd-cluster-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d
+   85  sudo kubectl -n argocd patch secret argocd-secret -p '{"stringData": {"admin.password": "YOUR_NEW_PASSWORD"}}'
+   86  argocd login localhost:8081
+   87  sudo kubectl get ns
+   88  sudo kubectl get pods argocd
+   89  sudo kubectl get pods -nargocd
+   90  sudo kubectl patch svc argocd-server -n argocd -p '{"spec": {"type": "LoadBalancer"}}'
+   91  sudo kubectl get svc argocd-server -nargocd
+   92  sudo kubectl get pods -nargocd
+   93  sudo kubectl delete ns argocd
+   94  sudo kubectl create ns argocd
+   95  sudo kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+   96  sudo kubectl get secrets
+   97  sudo kubectl get secrets -nargocd
+   98  sudo kubectl get pods -nargocd
+   99  sudo kubectl port-forward svc/argocd-server -n argocd 8080:443
+  100  vim argoui.yml
+  101  sudo kubectl apply -f argoui.yml -nargocd
+  102  sudo kubectl get pods -nargocd
+  103  argocd admin initial-password -n argocd
+  104  sudo kubectl apply -f argoui.yml 
+  105  argocd admin initial-password -n argocd
+  106  sudo kubectl port-forward svc/argocd-server -n argocd 8080:443
+  107  sudo kubectl create ns dev
+  108  sudo kubectl port-forward svc/argocd-server -n argocd 8080:443
+  109  git staus
+  110  git status
+  111  git clone https://github.com/Kukuruzkaa/Inception-of-Things.git
+  112  cd Inception-of-Things/
+  113  mkdir p3
+  114  cd p3/
+  115  ls
+  116  pwd
+  117  ls
+  118  git status
+  119  cd ..
+  120  ls
+  121  git add p3/
+  122  git commit -m 'p3 folder'
+  123  git push
+  124  ssh-keygen
+  125  cat /home/bturcott/.ssh/id_rsa.pub
+  126  git push
+  127  ls
+  128  cd ..
+  129  ls
+  130  rm -rf Inception-of-Things/
+  131  git clone git@github.com:Kukuruzkaa/Inception-of-Things.git
+  132  cd Inception-of-Things/
+  133  mkdir p3
+  134  git add p3/
+  135  git commit -m 
+  136  git commit -m 'test'
+  137  git push
+  138  cd p3/
+  139  ls
+  140  history > hist.txt
