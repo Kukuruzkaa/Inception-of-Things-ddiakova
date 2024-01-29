@@ -1,0 +1,138 @@
+    1  sudo   curl -s https://raw.githubusercontent.com/rancher/k3d/main/install.sh | bash
+    2  sudo apt-get install -y apt-transport-https ca-certificates curl
+    3  sudo   curl -s https://raw.githubusercontent.com/rancher/k3d/main/install.sh | bash
+    4  k3d
+    5  sudo k3d cluster create part3cluster -p "8081:80@loadbalancer" --agents 2
+    6  sudo /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    7  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    8  brew install docker
+    9  (echo; echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"') >> /home/bturcott/.bashrc
+   10  brew install docker
+   11  sudo k3d cluster create part3cluster -p "8081:80@loadbalancer" --agents 2
+   12  sudo system systemctl start docker
+   13  sudo system systemctl service.docker staet
+   14  sudo systemctl start docker
+   15  dockerd
+   16  cd /
+   17  du -sh
+   18  brew install argocd
+   19  docker
+   20  sudo systemctl start docker
+   21  dockerd
+   22  sudo k3d cluster create part3cluster -p "8081:80@loadbalancer" --agents 2
+   23  apt install docker.io
+   24  sudo apt install docker.io
+   25  sudo k3d cluster create part3cluster -p "8081:80@loadbalancer" --agents 2
+   26  kubectl
+   27  sudo snap install kubectl
+   28  sudo snap install kubectl --classic
+   29  kubectl
+   30  kubectl get ns
+   31  sudo kubectl get ns
+   32  sudo kubectl create ns argocd
+   33  export KUBECONFIG=$(sudo k3d kubeconfig write part3cluster)
+   34  sudo kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/core-install.yaml
+   35  sudo kubectl get  ns argocd
+   36  sudo kubectl get pods -n argocd
+   37  brew install argocd
+   38  sudo kubectl patch svc argocd-server -n argocd -p '{"spec": {"type": "LoadBalancer"}}'
+   39  sudo kubectl port-forward svc/argocd-server -n argocd 8080:443
+   40  sudo kubectl port-forward svc/argocd-server -n argocd 8080:443 -nargocd
+   41  sudo kubectl port-forward svc/argocd-server -n argocd 8080:443 
+   42  argocd admin initial-password -n argocd
+   43  sudo argocd admin initial-password -n argocd
+   44  sudo argocd admin initial-password
+   45  su
+   46  sudo argocd admin initial-password
+   47  ls
+   48  cd Inception-of-Things/
+   49  ls
+   50  cd p3/
+   51  ls
+   52  sudo kubectl get ns
+   53  ls
+   54  history
+   55  ls
+   56  sudo kubectl get ingress
+   57  sudo kubectl get ingress -nargocd
+   58  ls
+   59  sudo kubectl get service
+   60  sudo kubectl get service -nargocd
+   61  sudo kubectl create service clusterip argo --tcp80:80
+   62  sudo kubectl create service clusterip argo --tcp=80:80
+   63  sudo kubectl create service clusterip argo --tcp=80:80 -nargocd
+   64  ls
+   65  cat ingress.yml 
+   66  vim ingress.yml 
+   67  sudo kubectl apply -f ingress.yml
+   68  vim ingress.yml 
+   69  sudo kubectl apply -f ingress.yml
+   70  vim ingress.yml 
+   71  sudo kubectl apply -f ingress.yml
+   72  sudo kubectl get services -ndev
+   73  sudo kubectl get services 
+   74  sudo kubectl get ingress
+   75  sudo kubectl get ingress -ndev
+   76  vim ingress.yml 
+   77  sudo kubectl remove ingress example-ingress -ndev
+   78  sudo kubectl delete ingress example-ingress -ndev
+   79  vim ingress.yml 
+   80  sudo kubectl apply -f ingress.yml
+   81  vim ingress.yml 
+   82  vim service-ingress.yml
+   83  sudo kubectl apply -f service-ingress.yml 
+   84  git status
+   85  cd app/
+   86  ls
+   87  cd se
+   88  cat service.yml 
+   89  cd ..
+   90  ls
+   91  sudo kubectl get services -ndev
+   92  ls
+   93  cat traefik.yml 
+   94  ls
+   95  cd app/
+   96  ls
+   97  cat service.yml 
+   98  cat deploy.yml 
+   99  vim deploy.yml 
+  100  git status
+  101  sudo kubectl get service -nargocd
+  102  ls
+  103  cd ..
+  104  ls
+  105  vim ingress.yml 
+  106  sudo kubectl apply -f ingress.yml 
+  107  vim ingress.yml 
+  108  sudo kubectl apply -f ingress.yml 
+  109  vim ingress.yml 
+  110  sudo kubectl apply -f ingress.yml 
+  111  vim ingress.yml 
+  112  sudo kubectl apply -f ingress.yml 
+  113  vim ingress.yml 
+  114  sudo kubectl apply -f ingress.yml 
+  115  sudo kubectl port-forward svc/argocd-server -nargocd 8080:443
+  116  ls
+  117  cd app/
+  118  ls
+  119  vim deploy.yml 
+  120  sudo kubectl port-forward svc/argocd-server -nargocd 8080:443
+  121  ls
+  122  git status
+  123  git add deploy.yml 
+  124  git commit -m 'v1'
+  125  git puhs
+  126  git push
+  127  git pull
+  128  git pull --merge
+  129  git pull 
+  130  git pull --no-rebase
+  131  git status
+  132  git push
+  133  sudo kubectl port-forward svc/argocd-server -nargocd 8080:443
+  134  git status
+  135  ls
+  136  cd ..
+  137  ls
+  138  history > hist2.txt
