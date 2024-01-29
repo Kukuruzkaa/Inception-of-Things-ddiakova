@@ -1,25 +1,32 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: app-zero
+  name: app-two
   labels: 
-    app: app-zero
+    app: app-two
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
-      app: app-zero
+      app: app-two
   template:
     metadata:
       labels:
-        app: app-zero
+        app: app-two
     spec:
       containers:
       - name: hello-kubernetes
         image: paulbouwer/hello-kubernetes:1.10
         env:
         - name: MESSAGE
-          value: "App0"
+          value: "Hello from app2."
         ports:
         - containerPort: 8080
+        resources:
+          requests:
+            memory: "512Mi"
+            cpu: "100m"
+          limits:
+            memory: "1024Mi"
+            cpu: "200m"
 
