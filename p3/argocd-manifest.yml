@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/Kukuruzkaa/Inception-of-Things.git
+    repoURL: https://github.com/Kukuruzkaa/Inception-of-Things-ddiakova.git
     targetRevision: HEAD
     path: p3/app
   destination:
